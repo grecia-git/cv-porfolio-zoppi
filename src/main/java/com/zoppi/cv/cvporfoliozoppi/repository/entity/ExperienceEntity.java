@@ -22,7 +22,7 @@ public class ExperienceEntity {
     private LocalDate endDate;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "person_id", nullable = false)
+    @JoinColumn(name = "person_id", nullable = false, updatable = false)
     private PersonEntity person;
 
     public ExperienceEntity() {

@@ -20,7 +20,7 @@ public class SkillEntity {
     private String level;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "person_id", nullable = false)
+    @JoinColumn(name = "person_id", nullable = false, updatable = false)
     private PersonEntity person;
 
 
